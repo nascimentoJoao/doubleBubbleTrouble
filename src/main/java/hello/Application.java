@@ -16,7 +16,7 @@ public class Application {
 	public static void main(String[] args) {
 		System.setProperty("javax.xml.bind.JAXBContextFactory", "org.eclipse.persistence.jaxb.JAXBContextFactory");
 		log.info("-------------------main-------------");
-		SpringApplication.run(Application.class);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean

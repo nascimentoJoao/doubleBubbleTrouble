@@ -1,11 +1,19 @@
 package hello;
 
-public class Message {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Message 
+{
+	@Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
     private String username, body;
 
-    public Message(long id, String username, String body) {
-        this.id = id;
+    public Message(String username, String body) {
         this.username = username;
         this.body = body;
     }

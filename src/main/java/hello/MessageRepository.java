@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface MessageRepository extends CrudRepository<Message, Long> {
 
-    List<Message> findByUsername(String username);
+    List<Message> findByusername(String username);
 }

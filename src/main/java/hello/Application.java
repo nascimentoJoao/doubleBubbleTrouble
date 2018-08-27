@@ -14,6 +14,8 @@ public class Application {
 	private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) {
+		System.setProperty("javax.xml.bind.JAXBContextFactory", "org.eclipse.persistence.jaxb.JAXBContextFactory");
+		log.info("-------------------main-------------");
 		SpringApplication.run(Application.class);
 	}
 
